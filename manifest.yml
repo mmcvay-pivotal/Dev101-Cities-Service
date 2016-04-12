@@ -8,7 +8,6 @@ applications:
   timeout: 160
   services:
    - MyDB
-   - ServiceReg
 env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
     CF_TARGET: https://api.emea-2.fe.gopivotal.com
