@@ -1,22 +1,12 @@
 package io.pivotal.fe.demos;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
-import java.util.LinkedHashMap;
-
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.boot.test.TestRestTemplate;
 import org.springframework.boot.test.WebIntegrationTest;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * Test inspired by:
@@ -33,4 +23,9 @@ import org.springframework.web.client.RestTemplate;
 @WebIntegrationTest({"server.port:0", "eureka.client.enabled:false"})
 public class TestRestAPICityRepository {
 	private static final Logger logger = LoggerFactory.getLogger(TestRestAPICityRepository.class);
+	
+	@Test
+	public void canFetchPaged() {
+		//
+	}
 }
