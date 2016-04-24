@@ -1,14 +1,6 @@
 package io.pivotal.fe.demos.domain;
 
-import java.io.Serializable;
-
-public class City implements Serializable{
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -3931923372161957662L;
-	
+public class City {	
 	private long id;
     private String name;
     private String county;
