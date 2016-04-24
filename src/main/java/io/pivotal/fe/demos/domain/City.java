@@ -2,14 +2,6 @@ package io.pivotal.fe.demos.domain;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name="uktowns")
 public class City implements Serializable{
 	
 	/**
@@ -17,20 +9,12 @@ public class City implements Serializable{
 	 */
 	private static final long serialVersionUID = -3931923372161957662L;
 	
-	@Id
-    @GeneratedValue
 	private long id;
-	@Column
     private String name;
-	@Column
     private String county;
-	@Column(name="gridref")
     private String stateCode;
-	@Column(name="postcode")
     private String postalCode;
-	@Column
     private String latitude;
-	@Column
     private String longitude;
     
     public City() {
